@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+	margin : 0;
+	padding : 0;
+	box-sizing : border-box;
+
+}
+h1 , h2 , h3 , h4 , h5 , h6 , form , p , ul , li {
+	margin : 0;
+	padding : 0;
+}
+h1 {
+
+	font-family : "Pixelify Sans";
+	font-weight : 700;
+}
+h2 , ::placeholder , h3 {
+	
+	font-family : "Pixelify Sans";
+	font-weight : 600;
+}
+label {
+	font-family : "Pixelify Sans";
+	font-weight : 500;
+}
+p {
+	font-family : "Pixelify Sans";
+	font-weight : 400;
+}
+button {
+	font-family : "Pixelify Sans";
+	font-weight : 700;
+}
+.add-bg-section{
+
+	background: linear-gradient(160deg , rgba(0, 0, 0, 0.506) , rgba(17, 17, 17, 0.517) ) , url(../images/bg-pixel-1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+}
+.card-bg-2{
+	background: linear-gradient(160deg , rgba(0, 0, 0, 0.506) , rgba(17, 17, 17, 0.517) ) , url(../images/bg-pixel-3.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+}
+.card-bg{
+	background: linear-gradient(160deg , rgba(0, 0, 0, 0.13) , rgba(17, 17, 17, 0.215) ) , url(../images/bg-pixel-2.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+}
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}

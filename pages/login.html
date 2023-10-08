@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budject Tracker</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Comfortaa:wght@400;500;600;700&family=Montserrat:wght@700&family=Pixelify+Sans:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style/main.css" />
+  </head>
+  <body>
+    <div class="min-h-screen bg-primary flex flex-col gap-1">
+		<div class="w-full">
+			<nav class="bg-white p-5 flex flex-row w-full items-center" id="navbar">
+				<div class="flex-1">
+					<h1 class="text-4xl text-secondary">LOGIN NOW </h1>
+				</div>
+				<div  >
+					<p class="inline-block me-2">Already have an account?</p>
+					<button class="text-secondary border-2 border-accent p-3 px-5 rounded-full">
+						SIGN IN
+					</button>
+				</div>
+			</nav>
+		</div>
+		<div class="grid grid-cols-2 gap-8 place-content-center place-items-start w-full p-5">
+			<div class="bg-[#FAF8FD] h-full" >
+				<img src="../images/img-login.png" alt="">
+			</div>
+			<div class="mt-5 h-full flex flex-col gap-10">
+			<div>
+				<h1 class="text-4xl text-secondary">
+					Welcome To Budjet Tracker
+				</h1>
+				<p class="mt-2 tracking-wider">Login your account</p>
+			</div>
+				<form action="" class="flex flex-col h-full gap-10">
+					<fieldset>
+					<label for="name" id="input-name" class="text-lg ">
+						Name <input type="text" class="border-2 border-secondary block p-3 w-full rounded-md" placeholder="Enter your name" name="name">
+					</label>
+
+					</fieldset>
+					<label for="password" id="input-password" class="text-lg ">
+						Password <input type="password" class="border-2 border-secondary block p-3 w-full rounded-md" placeholder="Enter your password" name="password">
+					</label>
+					<fieldset>
+						<button class="w-full border-2 border-accent p-3 rounded-md">
+							LOGIN
+						</button>
+					</fieldset>
+
+				</form>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

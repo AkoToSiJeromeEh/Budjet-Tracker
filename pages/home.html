@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budject Tracker</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Comfortaa:wght@400;500;600;700&family=Montserrat:wght@700&family=Pixelify+Sans:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../style/main.css" />
+  </head>
+  <body>
+    <div
+      class="min-h-screen bg-primary flex flex-col gap-1 relative add-bg-section"
+    >
+      <nav
+        class="bg-white p-8 fixed left-0 bottom-5 right-0 flex items-center justify-center shadow-lg shadow-secondary w-[70%] m-auto rounded-full"
+      >
+        <ul class="flex flex-row gap-32 text-secondary">
+          <li>
+            <i class="fa-solid fa-house fa-2x"></i>
+          </li>
+          <li>
+            <i class="fa-solid fa-table-list fa-2x"></i>
+          </li>
+          <li
+            class="absolute -top-8 text-center w-16 h-16 m-auto left-0 right-0 bg-accent p-5 rounded-full"
+          >
+            <i
+              class="fa-solid fa-plus fa-2xl w-full h-full flex flex-col items-center justify-center"
+            ></i>
+          </li>
+          <li>
+            <i class="fa-solid fa-money-bills fa-2x"></i>
+          </li>
+          <li>
+            <i class="fa-solid fa-user fa-2x"></i>
+          </li>
+        </ul>
+      </nav>
+      <main class="grid grid-cols-1 gap-4 p-5 h-[80vh] overflow-y-auto">
+        <section id="card-section" class="w-[80%] m-auto flex flex-col gap-10">
+          <div class="flex flex-row gap-4 items-center w-full">
+            <div>
+              <img src="../images/icons/heart.png" alt="" />
+            </div>
+            <div>
+              <p class="text-secondary tracking-wider text-2xl">Welcome!</p>
+              <h2 class="text-lg font-extrabold text-white">Yssa</h2>
+            </div>
+            <div class="ms-auto">
+              <button
+                class="py-3 px-5 rounded-full border-2 border-accent text-white"
+              >
+                LOGOUT
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="card-bg text-white rounded-lg p-8 h-72 w-[60rem] m-auto flex flex-col gap-6 justify-around"
+          >
+            <div class="flex flex-row justify-between">
+              <div>
+                <p class="text-4xl text-secondary">TOTAL BUDJET</p>
+                <h2 class="text-lg tracking-widest">$87234.00</h2>
+              </div>
+              <div class="self-center">
+                <h3 class="bg-secondary p-3 rounded-full">
+                  BDT TRACKER WALLET
+                </h3>
+              </div>
+            </div>
+            <div
+              class="grid grid-flow-dense grid-cols-3 place-content-center place-items-center gap-5"
+            >
+              <div
+                class="bg-white text-black p-5 rounded-lg text-center w-full"
+              >
+                <h3 class="text-2xl">Needs</h3>
+                <p>$2333.00</p>
+              </div>
+              <div
+                class="bg-white text-black p-5 rounded-lg text-center w-full"
+              >
+                <h3 class="text-2xl">Wants</h3>
+                <p>$2333.00</p>
+              </div>
+              <div
+                class="bg-white text-black p-5 rounded-lg text-center w-full"
+              >
+                <h3 class="text-2xl">Savings</h3>
+                <p>$2333.00</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="category-section" class="w-[80%] m-auto">
+          <div
+            class="card-bg-2 text-white rounded-lg p-8 h-[25rem] w-[60rem] m-auto flex flex-col gap-6"
+          >
+            <div>
+              <h2 class="text-secondary text-4xl">Category</h2>
+            </div>
+            <div class="grid grid-flow-dense grid-cols-4 gap-4">
+              <div class="bg-white text-black p-5 rounded-md text-center">
+                <img
+                  class="m-auto"
+                  width="50px"
+                  src="../images/icons/dollar.png"
+                  alt=""
+                />
+                <h3 class="mt-3 text-lg">Bills</h3>
+              </div>
+              <div class="bg-secondary text-white p-5 rounded-md text-center">
+                <img
+                  class="m-auto"
+                  width="50px"
+                  src="../images/icons/bank.png"
+                  alt=""
+                />
+                <h3 class="mt-3 text-lg">Schools</h3>
+              </div>
+              <div class="bg-white text-black p-5 rounded-md text-center">
+                <img
+                  class="m-auto"
+                  width="50px"
+                  src="../images/icons/coffee-cup.png"
+                  alt=""
+                />
+                <h3 class="mt-3 text-lg">Foods</h3>
+              </div>
+              <div class="bg-secondary text-white p-5 rounded-md text-center">
+                <img
+                  class="m-auto"
+                  width="50px"
+                  src="../images/icons/gift.png"
+                  alt=""
+                />
+                <h3 class="mt-3 text-lg">Gifts</h3>
+              </div>
+              <div class="bg-white text-black p-5 rounded-md text-center">
+                <img
+                  class="m-auto"
+                  width="50px"
+                  src="../images/icons/heart.png"
+                  alt=""
+                />
+                <h3 class="mt-3 text-lg">Health</h3>
+              </div>
+              <div class="bg-secondary text-white p-5 rounded-md text-center">
+                <img
+                  class="m-auto"
+                  width="50px"
+                  src="../images/icons/start-up.png"
+                  alt=""
+                />
+                <h3 class="mt-3 text-lg">Transport</h3>
+              </div>
+              <div class="bg-white text-black p-5 rounded-md text-center">
+                <img
+                  class="m-auto"
+                  width="50px"
+                  src="../images/icons/suit.png"
+                  alt=""
+                />
+                <h3 class="mt-3 text-lg">Clothes</h3>
+              </div>
+              <div class="bg-secondary text-white p-5 rounded-md text-center">
+                <img
+                  class="m-auto"
+                  width="50px"
+                  src="../images/icons/heart.png"
+                  alt=""
+                />
+                <h3 class="mt-3 text-lg">Wife</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="priority-section"></section>
+      </main>
+    </div>
+  </body>
+</html>
